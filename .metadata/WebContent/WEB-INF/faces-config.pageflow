@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14599679042220" configfile="/s16g21/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index" x="554" y="1532" id="pf14599679372281" referenceLink="//@navigationRule.7/@navigationCase.0/@toViewId|" outlinks="pf14599679372283 pf14605658845532" inlinks="pf14599679372283 pf14605658845533 pf14605659711215 pf14605659711216 pf14605659711217 pf14605659711218 pf14612444316150" path="/index.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="mainMenu" x="338" y="178" id="pf14599679372284" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14605658845533" path="/DataBase.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="home" x="122" y="1532" id="pf14605658845534" referenceLink="//@navigationRule.7/@fromViewId|" outlinks="pf14605659711218 pf14612802178402" inlinks="pf14605658845532" path="/home.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="DataAnalysis" x="338" y="562" id="pf14605659711219" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf14605659711215" path="/DataAnalysis.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="DataExport" x="338" y="946" id="pf146056597112210" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf14605659711216" path="/DataExport.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="DataImport" x="338" y="1756" id="pf146056597112211" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf14605659711217" path="/DataImport.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="AccessLog" x="338" y="1330" id="pf14612444316161" referenceLink="//@navigationRule.6/@fromViewId|" outlinks="pf14612444316150" inlinks="pf14612802178402" path="/AccessLog.jsp"/>
+  <links id="pf14605658845533" target="pf14599679372281" source="pf14599679372284" outcome="Logout"/>
+  <links id="pf14605658845532" target="pf14605658845534" source="pf14599679372281" outcome="SUCCESS"/>
+  <links id="pf14605659711215" target="pf14599679372281" source="pf14605659711219" outcome="Logout"/>
+  <links id="pf14605659711216" target="pf14599679372281" source="pf146056597112210" outcome="Logout"/>
+  <links id="pf14605659711217" target="pf14599679372281" source="pf146056597112211" outcome="Logout"/>
+  <links id="pf14605659711218" target="pf14599679372281" source="pf14605658845534" outcome="Logout"/>
+  <links id="pf14612444316150" target="pf14599679372281" source="pf14612444316161" outcome="Logout"/>
+  <links id="pf14612802178402" target="pf14612444316161" source="pf14605658845534" outcome="AccessLog"/>
+  <links id="pf14599679372283" target="pf14599679372281" source="pf14599679372281" outcome="FAIL">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+</pageflow:Pageflow>
